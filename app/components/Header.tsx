@@ -11,15 +11,13 @@ export default function Header() {
 
         <nav
           aria-label="Main navigation"
-          className={`flex items-center gap-6 overflow-hidden transition-all duration-500 ease-in-out ${
-            open ? "max-w-sm opacity-100 mr-6" : "max-w-0 opacity-0 mr-0"
-          }`}
+          className={`site-nav ${open ? "nav-open" : ""}`}
         >
           <a href="/" className="nav-link">Home</a>
           <a href="#" className="nav-link">Prices</a>
           <a href="#" className="nav-link">Specials</a>
           <a href="/privacy" className="nav-link">Privacy</a>
-          <span className="text-green-400 select-none" aria-hidden="true">|</span>
+          <span className="nav-separator" aria-hidden="true">|</span>
         </nav>
 
         <div className="flex items-center gap-3 shrink-0">
