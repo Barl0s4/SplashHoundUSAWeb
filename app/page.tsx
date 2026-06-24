@@ -1,49 +1,89 @@
+import { Nunito } from "next/font/google";
+import "./page.css";
+import ReviewsSection from "./components/ReviewsSection";
+import LocationSection from "./components/LocationSection";
+import CookieBanner from "./components/CookieBanner";
+import ScrollToTop from "./components/ScrollToTop";
+import Header from "./components/Header";
+
+const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
+
 export default function Page() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="bg-sky-500 text-white shadow-md">
-        <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <span className="text-2xl font-bold tracking-tight">Splash Hound USA</span>
-          <nav className="flex gap-6 text-sm font-medium">
-            <a href="#" className="hover:text-sky-100 transition-colors">Home</a>
-            <a href="#" className="hover:text-sky-100 transition-colors">Services</a>
-            <a href="#" className="hover:text-sky-100 transition-colors">About</a>
-            <a href="#" className="hover:text-sky-100 transition-colors">Contact</a>
-          </nav>
-        </div>
-      </header>
+    <div className={`flex flex-col min-h-screen ${nunito.className}`}>
 
-      <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-12">
-        <h1 className="text-4xl font-bold text-sky-700 mb-4">Welcome to Splash Hound USA</h1>
-        <p className="text-lg text-gray-600 mb-8">
-          Your dog deserves the best. We make bath time fun, stress-free, and tail-waggingly good.
-        </p>
+      <Header />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl shadow p-6 border border-sky-100">
-            <h2 className="text-xl font-semibold text-sky-600 mb-2">Full Grooming</h2>
-            <p className="text-gray-500 text-sm">Bath, dry, trim, and style — head to tail.</p>
+      {/* ── Body ── */}
+      <main id="main-content" className="flex-1">
+
+        <section className="hero">
+          <img src="images/Dog1.jpeg" className="hero-img" alt="Happy dog at Splash Hound" />
+          <div className="hero-badge">
+            <span className="hero-badge-label">Est. 2006</span>
+            <span className="hero-badge-title">Dog Wash &amp; Pet Supply</span>
+            <span className="hero-badge-label">All are welcome</span>
           </div>
-          <div className="bg-white rounded-2xl shadow p-6 border border-sky-100">
-            <h2 className="text-xl font-semibold text-sky-600 mb-2">Self-Wash Stations</h2>
-            <p className="text-gray-500 text-sm">Use our tubs, towels, and dryers yourself.</p>
-          </div>
-          <div className="bg-white rounded-2xl shadow p-6 border border-sky-100">
-            <h2 className="text-xl font-semibold text-sky-600 mb-2">Nail & Ear Care</h2>
-            <p className="text-gray-500 text-sm">Quick add-ons to keep your pup comfortable.</p>
+        </section>
+
+        <div className="page-content">
+          <div className="offer-section">
+
+            <div className="offer-text">
+              <h1 className="section-title">Welcome to Splash Hound USA</h1>
+              <p className="offer-description">
+                We are a locally owned Pet Supply and Dog Wash with the BEST do-it-yourself dog
+                bath around! We also offer biologically appropriate dog &amp; cat food for any
+                pet&apos;s special needs, plus a unique variety of carefully selected toys, treats,
+                supplements, grooming &amp; health aids, leashes, collars &amp; accessories.
+              </p>
+              <p className="offer-description">
+                Our mission is to provide a comfortable, clean, &amp; welcoming facility, where
+                our guests and their canines can get a great do-it-yourself dog wash and quality
+                pet products at a great value. We pride ourselves in outstanding customer service
+                and a true appreciation for our clients and the pets who make their lives happy.
+              </p>
+            </div>
+
+            <div className="cards">
+              <button className="card">
+                <h2 className="card-title">Full Grooming</h2>
+                <p className="card-body">Bath, dry, trim, and style — head to tail.</p>
+              </button>
+              <button className="card">
+                <h2 className="card-title">Self-Wash Stations</h2>
+                <p className="card-body">Use our tubs, towels, and dryers yourself.</p>
+              </button>
+              <button className="card">
+                <h2 className="card-title">Nail &amp; Ear Care</h2>
+                <p className="card-body">Quick add-ons to keep your pup comfortable.</p>
+              </button>
+              <button className="card">
+                <h2 className="card-title">Pet Supply</h2>
+                <p className="card-body">Shampoos, treats, accessories, and more.</p>
+              </button>
+            </div>
+
           </div>
         </div>
+
+        <ReviewsSection />
+        <LocationSection />
+        <CookieBanner />
+        <ScrollToTop />
+
       </main>
 
-      <footer className="bg-sky-600 text-sky-100 text-sm">
-        <div className="max-w-5xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      {/* ── Footer ── */}
+      <footer className="footer">
+        <div className="footer-inner">
           <span>&copy; {new Date().getFullYear()} Splash Hound USA. All rights reserved.</span>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
+          <div className="footer-links">
+            <a href="/privacy">Privacy Policy</a>
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
