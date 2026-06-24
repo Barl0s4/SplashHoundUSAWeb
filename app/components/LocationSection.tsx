@@ -20,6 +20,7 @@ export default function LocationSection() {
           <div className="map-col">
             <h2 className="location-title">Find Us</h2>
             <p className="location-address">1908 P St, Sacramento, CA 95811</p>
+            <p className="location-address">(916) 642-8700</p>
             <div className="map-wrapper">
               <MapEmbed />
             </div>

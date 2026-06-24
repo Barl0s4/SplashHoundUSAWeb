@@ -19,10 +19,19 @@ export default function Page() {
 
         <section className="hero">
           <img src="images/Dog1.jpeg" className="hero-img" alt="Happy dog at Splash Hound" />
+          <div className="hero-overlay" />
           <div className="hero-badge">
-            <span className="hero-badge-label">Est. 2006</span>
+            <span className="hero-badge-label">Est. 2007</span>
+            <div className="hero-badge-divider" />
             <span className="hero-badge-title">Dog Wash &amp; Pet Supply</span>
+            <div className="hero-badge-divider" />
+            <span className="hero-badge-label">Localy owned</span>
             <span className="hero-badge-label">All are welcome</span>
+          </div>
+          <div className="hero-wave">
+            <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+              <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,20 1440,40 L1440,80 L0,80 Z" fill="#f2f7ee" />
+            </svg>
           </div>
         </section>
 
