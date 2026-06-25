@@ -55,23 +55,28 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="cards">
-              <a href="/self-serve-wash" className="card">
-                <h2 className="card-title">Self-Serve Wash</h2>
-                <p className="card-body">Use our tubs, towels &amp; dryers — from $18, no appointment needed.</p>
+            <div className="cards-col">
+              <a href="https://splashhoundusa.setmore.com" target="_blank" rel="noopener noreferrer" className="home-book-btn">
+                Book Appointment →
               </a>
-              <a href="/full-serve-wash" className="card">
-                <h2 className="card-title">Full-Serve Wash</h2>
-                <p className="card-body">We handle everything — bath, dry, brush, and nails. Starting at $35.</p>
-              </a>
-              <a href="/pet-supply" className="card">
-                <h2 className="card-title">Pet Supply</h2>
-                <p className="card-body">Food, treats, shampoos, toys, collars, and accessories.</p>
-              </a>
-              <a href="/prices" className="card">
-                <h2 className="card-title">Prices &amp; Specials</h2>
-                <p className="card-body">Transparent pricing plus weekly deals like Manicure Monday.</p>
-              </a>
+              <div className="cards">
+                <a href="/self-serve-wash" className="card">
+                  <h2 className="card-title">Self-Serve Wash</h2>
+                  <p className="card-body">Use our tubs, towels &amp; dryers — from $18, no appointment needed.</p>
+                </a>
+                <a href="/full-serve-wash" className="card">
+                  <h2 className="card-title">Full-Serve Wash</h2>
+                  <p className="card-body">We handle everything — bath, dry, brush, and nails. Starting at $35.</p>
+                </a>
+                <a href="/pet-supply" className="card">
+                  <h2 className="card-title">Pet Supply</h2>
+                  <p className="card-body">Food, treats, shampoos, toys, collars, and accessories.</p>
+                </a>
+                <a href="/prices" className="card">
+                  <h2 className="card-title">Prices &amp; Specials</h2>
+                  <p className="card-body">Transparent pricing plus weekly deals like Manicure Monday.</p>
+                </a>
+              </div>
             </div>
 
           </div>
