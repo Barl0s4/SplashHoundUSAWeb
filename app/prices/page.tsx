@@ -22,7 +22,7 @@ export default function PricesPage() {
           <p className="prices-banner-sub">Transparent pricing, no surprises</p>
           <div className="prices-banner-wave">
             <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#f2f7ee" />
+              <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#eff6ff" />
             </svg>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function PricesPage() {
         {/* ── Wave to add-ons ── */}
         <div className="wave-divider" aria-hidden="true">
           <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0,20 C360,60 720,5 1080,35 C1260,50 1380,10 1440,25 L1440,70 L0,70 Z" fill="#1a4731" />
+            <path d="M0,20 C360,60 720,5 1080,35 C1260,50 1380,10 1440,25 L1440,70 L0,70 Z" fill="#0a1d35" />
           </svg>
         </div>
 
@@ -183,7 +183,7 @@ export default function PricesPage() {
         {/* ── Wave back to cream ── */}
         <div className="wave-divider-reverse" aria-hidden="true">
           <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0,35 C360,5 720,55 1080,25 C1260,10 1380,50 1440,30 L1440,0 L0,0 Z" fill="#f2f7ee" />
+            <path d="M0,35 C360,5 720,55 1080,25 C1260,10 1380,50 1440,30 L1440,0 L0,0 Z" fill="#eff6ff" />
           </svg>
         </div>
 

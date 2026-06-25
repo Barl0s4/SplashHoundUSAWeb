@@ -74,7 +74,7 @@ export default function ReviewsSection() {
         <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path
             d="M0,35 C360,70 720,0 1080,35 C1260,52 1380,20 1440,35 L1440,70 L0,70 Z"
-            fill="#1a4731"
+            fill="#0a1d35"
           />
         </svg>
       </div>

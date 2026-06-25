@@ -17,7 +17,7 @@
 /* green page banner (same pattern as prices) */
 .ssw-banner {
   position: relative;
-  background: linear-gradient(135deg, #14532d 0%, #166534 45%, #15803d 100%);
+  background: linear-gradient(135deg, #0f2744 0%, #163d70 45%, #1e5fa8 100%);
   padding: 3rem 1.5rem 5rem;
   text-align: center;
   color: white;
@@ -36,7 +36,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #bbf7d0;
+  color: #bfdbfe;
 }
 
 .ssw-banner-wave {
@@ -93,7 +93,7 @@
 
 .ssw-rule {
   border: none;
-  border-top: 2px solid #15803d;
+  border-top: 2px solid #1e5fa8;
   margin: 0;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .ssw-text strong {
-  color: #14532d;
+  color: #0f2744;
 }
 
 @media (max-width: 767px) {

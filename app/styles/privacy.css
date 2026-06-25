@@ -8,7 +8,7 @@
 .privacy-section h2 {
   font-size: 1.1rem;
   font-weight: 900;
-  color: #14532d;
+  color: #0f2744;
   margin-bottom: 0.5rem;
 }
 
@@ -18,5 +18,5 @@
   line-height: 1.75;
 }
 
-.privacy-section a { color: #15803d; text-decoration: underline; }
-.privacy-section a:hover { color: #14532d; }
+.privacy-section a { color: #1e5fa8; text-decoration: underline; }
+.privacy-section a:hover { color: #0f2744; }

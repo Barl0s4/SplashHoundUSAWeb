@@ -9,7 +9,7 @@ export default function LocationSection() {
         <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path
             d="M0,35 C360,0 720,70 1080,35 C1260,18 1380,55 1440,35 L1440,70 L0,70 Z"
-            fill="#f2f7ee"
+            fill="#eff6ff"
           />
         </svg>
       </div>

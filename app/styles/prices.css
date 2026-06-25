@@ -1,7 +1,7 @@
 /* ── Prices Banner ───────────────────────────── */
 .prices-banner {
   position: relative;
-  background: linear-gradient(135deg, #14532d 0%, #166534 45%, #15803d 100%);
+  background: linear-gradient(135deg, #0f2744 0%, #163d70 45%, #1e5fa8 100%);
   padding: 3rem 1.5rem 5rem;
   text-align: center;
   color: white;
@@ -19,7 +19,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #bbf7d0;
+  color: #bfdbfe;
 }
 
 .prices-banner-wave {
@@ -53,7 +53,7 @@
   background: white;
   border-radius: 1rem;
   padding: 2rem;
-  border-top: 4px solid #15803d;
+  border-top: 4px solid #1e5fa8;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
   display: flex;
   flex-direction: column;
@@ -63,9 +63,9 @@
 .price-card-title {
   font-size: 1.35rem;
   font-weight: 900;
-  color: #14532d;
+  color: #0f2744;
   padding-bottom: 0.75rem;
-  border-bottom: 2px solid #dcfce7;
+  border-bottom: 2px solid #dbeafe;
 }
 
 .price-headline {
@@ -83,7 +83,7 @@
 .price-amount {
   font-size: 1.65rem;
   font-weight: 900;
-  color: #15803d;
+  color: #1e5fa8;
   line-height: 1;
 }
 
@@ -121,7 +121,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #15803d;
+  color: #1e5fa8;
   font-weight: 700;
 }
 
@@ -129,10 +129,10 @@
   font-size: 0.85rem;
   color: #374151;
   line-height: 1.65;
-  background: #f0fdf4;
+  background: #eff6ff;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
-  border-left: 3px solid #86efac;
+  border-left: 3px solid #93c5fd;
 }
 
 .price-note-warn {
@@ -147,7 +147,7 @@
 }
 
 .price-phone {
-  color: #15803d;
+  color: #1e5fa8;
   font-weight: 700;
   text-decoration: none;
 }
@@ -159,7 +159,7 @@
   text-align: center;
   text-decoration: none;
   margin-top: auto;
-  background: linear-gradient(135deg, #15803d, #166534);
+  background: linear-gradient(135deg, #1e5fa8, #163d70);
   color: white;
   font-family: inherit;
   font-size: 0.95rem;
@@ -170,7 +170,7 @@
   border-radius: 2rem;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.15s ease;
-  box-shadow: 0 4px 14px rgba(21, 128, 61, 0.35);
+  box-shadow: 0 4px 14px rgba(30, 95, 168, 0.35);
 }
 
 .book-btn:hover {
@@ -188,7 +188,7 @@
 .specials-heading {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #14532d;
+  color: #0f2744;
   margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
@@ -230,7 +230,7 @@
 .special-offer {
   font-size: 1.4rem;
   font-weight: 900;
-  color: #14532d;
+  color: #0f2744;
   line-height: 1.2;
 }
 
@@ -241,7 +241,7 @@
 
 /* ── Add-Ons (dark section) ──────────────────── */
 .add-ons-section {
-  background: #1a4731;
+  background: #0a1d35;
   padding: 3rem 0 4rem;
 }
 
@@ -263,13 +263,13 @@
   font-weight: 900;
   color: white;
   padding-bottom: 0.6rem;
-  border-bottom: 2px solid rgba(134, 239, 172, 0.25);
+  border-bottom: 2px solid rgba(147, 197, 253, 0.25);
 }
 
 .add-on-sub {
   font-size: 0.85rem;
   font-style: italic;
-  color: #86efac;
+  color: #93c5fd;
   margin-top: -0.75rem;
 }
 
@@ -282,7 +282,7 @@
 .add-on-group-title {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #86efac;
+  color: #93c5fd;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -298,7 +298,7 @@
 
 .add-on-list li {
   font-size: 0.9rem;
-  color: #d1fae5;
+  color: #dbeafe;
   display: flex;
   align-items: baseline;
   gap: 0.6rem;
@@ -306,7 +306,7 @@
 
 .add-on-price {
   font-weight: 800;
-  color: #4ade80;
+  color: #60a5fa;
   min-width: 2.75rem;
   flex-shrink: 0;
 }

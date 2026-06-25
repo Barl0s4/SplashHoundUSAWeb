@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f2f7ee;
-  --foreground: #1a3a1a;
+  --background: #eff6ff;
+  --foreground: #0f2744;
 }
 
 @theme inline {
@@ -20,7 +20,7 @@ body {
 
 /* Visible focus ring for keyboard navigation (ADA) */
 :focus-visible {
-  outline: 2px solid #15803d;
+  outline: 2px solid #1e5fa8;
   outline-offset: 3px;
   border-radius: 3px;
 }
@@ -50,7 +50,7 @@ body {
   overflow: visible;
   clip: auto;
   white-space: normal;
-  background: #14532d;
+  background: #0f2744;
   color: white;
   border-radius: 0 0 0.5rem 0.5rem;
   font-weight: 700;

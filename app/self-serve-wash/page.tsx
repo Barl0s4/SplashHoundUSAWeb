@@ -23,7 +23,7 @@ export default function SelfServeWashPage() {
           <p className="ssw-banner-sub">No appointment necessary · from $18 · all sizes</p>
           <div className="ssw-banner-wave">
             <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M0,35 C360,70 720,0 1080,35 C1260,52 1380,18 1440,35 L1440,70 L0,70 Z" fill="#f2f7ee" />
+              <path d="M0,35 C360,70 720,0 1080,35 C1260,52 1380,18 1440,35 L1440,70 L0,70 Z" fill="#eff6ff" />
             </svg>
           </div>
         </div>
