@@ -18,7 +18,6 @@ export default function Header() {
           <a href="/pet-supply" className="nav-link">Pet Supply</a>
           <a href="/full-serve-wash" className="nav-link">Full-Serve Wash</a>
           <a href="/self-serve-wash" className="nav-link">Self-Serve Wash</a>
-          <a href="/specials" className="nav-link">Specials</a>
           <span className="nav-separator" aria-hidden="true">|</span>
           <a href="/privacy" className="nav-link">Privacy</a>
         </nav>
