@@ -1,0 +1,152 @@
+/* ── Full-Serve Wash Page ────────────────────── */
+
+.fsw-banner {
+  position: relative;
+  background: linear-gradient(135deg, #14532d 0%, #166534 45%, #15803d 100%);
+  padding: 3rem 1.5rem 5rem;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.fsw-banner-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.fsw-banner-sub {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #bbf7d0;
+}
+
+.fsw-banner-phone {
+  color: #86efac;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.fsw-banner-phone:hover {
+  color: white;
+}
+
+.fsw-banner-wave {
+  position: absolute;
+  bottom: -1;
+  left: 0;
+  right: 0;
+  line-height: 0;
+}
+
+.fsw-banner-wave svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+/* ── Main content ────────────────────────────── */
+.fsw-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.fsw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Left: stacked images + button */
+.fsw-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fsw-img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+  display: block;
+}
+
+/* Right: button, text, image */
+.fsw-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fsw-rule {
+  border: none;
+  border-top: 2px solid #15803d;
+  margin: 0;
+}
+
+.fsw-text p {
+  font-size: 0.975rem;
+  color: #374151;
+  line-height: 1.85;
+}
+
+.fsw-warn {
+  font-size: 0.975rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #b91c1c;
+  line-height: 1.7;
+}
+
+.fsw-book-btn {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: white;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 6px 24px rgba(21, 128, 61, 0.5), 0 0 0 0 rgba(74, 222, 128, 0);
+  align-self: stretch;
+  text-align: center;
+  animation: btn-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes btn-pulse {
+  0%, 100% { box-shadow: 0 6px 24px rgba(21, 128, 61, 0.5), 0 0 0 0 rgba(74, 222, 128, 0.5); }
+  50%       { box-shadow: 0 6px 24px rgba(21, 128, 61, 0.5), 0 0 0 10px rgba(74, 222, 128, 0); }
+}
+
+.fsw-book-btn:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(21, 128, 61, 0.55);
+  animation: none;
+}
+
+@media (max-width: 767px) {
+  .fsw-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .fsw-banner-title {
+    font-size: 1.75rem;
+  }
+
+  .fsw-book-btn {
+    align-self: stretch;
+    text-align: center;
+  }
+}

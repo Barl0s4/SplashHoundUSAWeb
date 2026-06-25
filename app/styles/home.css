@@ -27,7 +27,7 @@
 /* cream wave that flows visually into the content section */
 .hero-wave {
   position: absolute;
-  bottom: 0;
+  bottom: -1;
   left: 0;
   right: 0;
   line-height: 0;

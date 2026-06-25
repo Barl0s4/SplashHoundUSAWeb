@@ -41,7 +41,7 @@
 
 .ssw-banner-wave {
   position: absolute;
-  bottom: 0;
+  bottom: -1;
   left: 0;
   right: 0;
   line-height: 0;
@@ -93,7 +93,7 @@
 
 .ssw-rule {
   border: none;
-  border-top: 2px solid #dcfce7;
+  border-top: 2px solid #15803d;
   margin: 0;
 }
 
