@@ -1,8 +1,6 @@
 /* ── Site Header ─────────────────────────────── */
 .site-header {
-  background: linear-gradient(135deg, #0f2744 0%, #163d70 45%, #1e5fa8 100%);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.22);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(180deg, #0f2744 0%, #163d70 60%, #1e5fa8 100%);
 }
 
 .header-logo {
@@ -92,7 +90,7 @@
     right: 0;
     flex-direction: column;
     align-items: flex-start;
-    background: linear-gradient(135deg, #0f2744 0%, #163d70 45%, #1e5fa8 100%);
+    background: linear-gradient(180deg, #0f2744 0%, #163d70 60%, #1e5fa8 100%);
     padding: 0 1.5rem;
     max-width: none;
     max-height: 0;
@@ -279,6 +277,7 @@
   color: #93c5fd;
   margin-bottom: 0.75rem;
 }
+
 
 /* hours mini-table */
 .footer-hours {

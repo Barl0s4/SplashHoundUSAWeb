@@ -3,11 +3,12 @@ import "../styles/shared.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export const metadata = {
   title: "Pet Supply — Splash Hound USA",
 };
+
+const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export default function PetSupplyPage() {
   return (

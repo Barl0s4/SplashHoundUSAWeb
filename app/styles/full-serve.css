@@ -2,8 +2,8 @@
 
 .fsw-banner {
   position: relative;
-  background: linear-gradient(135deg, #0f2744 0%, #163d70 45%, #1e5fa8 100%);
-  padding: 3rem 1.5rem 5rem;
+  background: linear-gradient(180deg, #1e5fa8 0%, #163d70 50%, #0f2744 100%);
+  padding: 1.5rem 1.5rem 5rem;
   text-align: center;
   color: white;
   overflow: hidden;
@@ -36,7 +36,7 @@
 
 .fsw-banner-wave {
   position: absolute;
-  bottom: -1;
+  bottom: -1px;
   left: 0;
   right: 0;
   line-height: 0;

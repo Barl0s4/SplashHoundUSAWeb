@@ -4,11 +4,12 @@ import "../styles/privacy.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export const metadata = {
   title: "Privacy Policy — Splash Hound USA",
 };
+
+const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export default function PrivacyPage() {
   return (

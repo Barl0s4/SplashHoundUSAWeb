@@ -7,6 +7,7 @@ import LocationSection from "./components/LocationSection";
 import CookieBanner from "./components/CookieBanner";
 import Header from "./components/Header";
 
+
 const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export default function Page() {

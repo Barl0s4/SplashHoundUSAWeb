@@ -1,12 +1,13 @@
-export default function Footer() {
+export default function Footer({ noWave = false }: { noWave?: boolean }) {
   return (
     <footer className="footer">
-      <div className="footer-wave-top" aria-hidden="true">
-        <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0,20 C360,60 720,5 1080,38 C1260,52 1380,12 1440,28 L1440,70 L0,70 Z" fill="#0f2744" />
-        </svg>
-      </div>
-
+      {!noWave && (
+        <div className="footer-wave-top" aria-hidden="true">
+          <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,20 C360,60 720,5 1080,38 C1260,52 1380,12 1440,28 L1440,70 L0,70 Z" fill="#0f2744" />
+          </svg>
+        </div>
+      )}
       <div className="footer-body">
 
         {/* Brand + contact */}
