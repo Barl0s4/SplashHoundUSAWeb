@@ -2,6 +2,7 @@ import { Nunito } from "next/font/google";
 import "../styles/shared.css";
 import "../styles/prices.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
@@ -186,14 +187,9 @@ export default function PricesPage() {
           </svg>
         </div>
 
-      </main>
 
-      <footer className="footer">
-        <div className="footer-inner">
-          <span>&copy; {new Date().getFullYear()} Splash Hound USA. All rights reserved.</span>
-          <div className="footer-links"><a href="/privacy">Privacy Policy</a></div>
-        </div>
-      </footer>
+      </main>
+      <Footer />
     </div>
   );
 }
