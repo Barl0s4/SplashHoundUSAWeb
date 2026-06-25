@@ -86,11 +86,8 @@ export default function Page() {
         <LocationSection />
         <CookieBanner />
 
-
       </main>
-
       <Footer />
-
     </div>
   );
 }

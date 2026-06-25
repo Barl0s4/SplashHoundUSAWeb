@@ -187,7 +187,6 @@ export default function PricesPage() {
           </svg>
         </div>
 
-
       </main>
       <Footer />
     </div>

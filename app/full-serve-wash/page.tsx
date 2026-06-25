@@ -75,9 +75,9 @@ export default function FullServeWashPage() {
                 className="fsw-img"
               />
             </div>
-
           </div>
         </div>
+        
       </main>
       <Footer />
     </div>
