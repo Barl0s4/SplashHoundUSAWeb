@@ -1,6 +1,7 @@
 import { Nunito } from "next/font/google";
 import "./styles/shared.css";
 import "./styles/home.css";
+import Footer from "./components/Footer";
 import ReviewsSection from "./components/ReviewsSection";
 import LocationSection from "./components/LocationSection";
 import CookieBanner from "./components/CookieBanner";
@@ -80,17 +81,10 @@ export default function Page() {
         <LocationSection />
         <CookieBanner />
 
+
       </main>
 
-      {/* ── Footer ── */}
-      <footer className="footer">
-        <div className="footer-inner">
-          <span>&copy; {new Date().getFullYear()} Splash Hound USA. All rights reserved.</span>
-          <div className="footer-links">
-            <a href="/privacy">Privacy Policy</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );
