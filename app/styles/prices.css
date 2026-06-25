@@ -155,6 +155,9 @@
 .price-phone:hover { text-decoration: underline; }
 
 .book-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   margin-top: auto;
   background: linear-gradient(135deg, #15803d, #166534);
   color: white;

@@ -105,6 +105,8 @@
 }
 
 .fsw-book-btn {
+  display: block;
+  text-decoration: none;
   background: linear-gradient(135deg, #16a34a, #15803d);
   color: white;
   font-family: inherit;

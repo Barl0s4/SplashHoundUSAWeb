@@ -51,7 +51,7 @@ export default function FullServeWashPage() {
 
             {/* Right: button, description, warning, image */}
             <div className="fsw-text">
-              <button className="fsw-book-btn">Book Appointment →</button>
+              <a href="https://splashhoundusa.setmore.com" target="_blank" rel="noopener noreferrer" className="fsw-book-btn">Book Appointment →</a>
 
               <hr className="fsw-rule" />
 

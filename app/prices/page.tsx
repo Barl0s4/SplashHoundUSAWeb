@@ -88,7 +88,7 @@ export default function PricesPage() {
                 Please call:{" "}
                 <a href="tel:9166428700" className="price-phone">916.642.8700</a>
               </p>
-              <button className="book-btn">Book Appointment</button>
+              <a href="https://splashhoundusa.setmore.com" target="_blank" rel="noopener noreferrer" className="book-btn">Book Appointment</a>
             </div>
 
           </div>
