@@ -26,7 +26,7 @@ export default function Page() {
             <div className="hero-badge-divider" />
             <span className="hero-badge-title">Dog Wash &amp; Pet Supply</span>
             <div className="hero-badge-divider" />
-            <span className="hero-badge-label">Localy owned</span>
+            <span className="hero-badge-label">Locally owned</span>
             <span className="hero-badge-label">All are welcome</span>
           </div>
           <div className="hero-wave">
