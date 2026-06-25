@@ -1,9 +1,9 @@
 import { Nunito } from "next/font/google";
-import "./page.css";
+import "./styles/shared.css";
+import "./styles/home.css";
 import ReviewsSection from "./components/ReviewsSection";
 import LocationSection from "./components/LocationSection";
 import CookieBanner from "./components/CookieBanner";
-import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
@@ -55,22 +55,22 @@ export default function Page() {
             </div>
 
             <div className="cards">
-              <button className="card">
-                <h2 className="card-title">Full Grooming</h2>
-                <p className="card-body">Bath, dry, trim, and style — head to tail.</p>
-              </button>
-              <button className="card">
-                <h2 className="card-title">Self-Wash Stations</h2>
-                <p className="card-body">Use our tubs, towels, and dryers yourself.</p>
-              </button>
-              <button className="card">
-                <h2 className="card-title">Nail &amp; Ear Care</h2>
-                <p className="card-body">Quick add-ons to keep your pup comfortable.</p>
-              </button>
-              <button className="card">
+              <a href="/self-serve-wash" className="card">
+                <h2 className="card-title">Self-Serve Wash</h2>
+                <p className="card-body">Use our tubs, towels &amp; dryers — from $18, no appointment needed.</p>
+              </a>
+              <a href="/full-serve-wash" className="card">
+                <h2 className="card-title">Full-Serve Wash</h2>
+                <p className="card-body">We handle everything — bath, dry, brush, and nails. Starting at $35.</p>
+              </a>
+              <a href="/pet-supply" className="card">
                 <h2 className="card-title">Pet Supply</h2>
-                <p className="card-body">Shampoos, treats, accessories, and more.</p>
-              </button>
+                <p className="card-body">Food, treats, shampoos, toys, collars, and accessories.</p>
+              </a>
+              <a href="/prices" className="card">
+                <h2 className="card-title">Prices &amp; Specials</h2>
+                <p className="card-body">Transparent pricing plus weekly deals like Manicure Monday.</p>
+              </a>
             </div>
 
           </div>
@@ -79,7 +79,6 @@ export default function Page() {
         <ReviewsSection />
         <LocationSection />
         <CookieBanner />
-        <ScrollToTop />
 
       </main>
 

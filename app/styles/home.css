@@ -1,0 +1,469 @@
+/* ── Hero Banner ─────────────────────────────── */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+
+/* darkens corners, draws eye to center badge */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, transparent 30%, rgba(20, 83, 45, 0.6) 100%),
+    linear-gradient(160deg, rgba(20, 83, 45, 0.35) 0%, transparent 50%, rgba(20, 83, 45, 0.5) 100%);
+  z-index: 1;
+}
+
+/* cream wave that flows visually into the content section */
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 0;
+  z-index: 2;
+}
+
+.hero-wave svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.hero-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle at 40% 35%, #3da865d4, #1a5e33d6);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  gap: 4px;
+  z-index: 3;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.14), 0 10px 44px rgba(0, 0, 0, 0.45);
+}
+
+.hero-badge-divider {
+  width: 36px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 2px 0;
+  border-radius: 1px;
+}
+
+.hero-badge-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #bbf7d0;
+}
+
+.hero-badge-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+
+/* ── Offer Section (two-column) ──────────────── */
+.offer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .offer-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.offer-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Service Cards (2×2 grid) ────────────────── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cards { width: 380px; }
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #dcfce7;
+  border-top: 3px solid #dcfce7;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.11);
+  border-color: #86efac;
+  border-top-color: #15803d;
+  background: #f0fdf4;
+}
+
+.card:active { transform: translateY(-1px); }
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 0.4rem;
+}
+
+.card-body {
+  font-size: 0.8rem;
+  color: #78716c;
+  line-height: 1.5;
+}
+
+/* ── Reviews Section ─────────────────────────── */
+.reviews-section {
+  background-color: #1a4731;
+  color: white;
+  padding: 3rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.reviews-title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.reviews-summary {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  transition: background 0.2s ease;
+}
+
+.reviews-summary:hover { background: rgba(255, 255, 255, 0.08); }
+
+.reviews-biz-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #bbf7d0;
+}
+
+.reviews-meta {
+  font-size: 0.8rem;
+  color: #86efac;
+}
+
+.stars { display: flex; gap: 2px; }
+.star-empty { color: rgba(255, 255, 255, 0.25); }
+.star-filled { color: #fbbf24; }
+.stars-sm .star { font-size: 0.85rem; }
+.stars-lg .star { font-size: 1.4rem; }
+
+.review-carousel {
+  max-width: 680px;
+  margin: 0 auto;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.review-carousel.carousel-fading {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.review-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.review-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #15803d;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.review-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #d1fae5;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.review-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.review-text {
+  font-size: 0.925rem;
+  line-height: 1.75;
+  color: #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .review-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.review-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.review-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #6ee7b7;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.review-link:hover { color: white; }
+
+.review-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dot-active {
+  background: white;
+  transform: scale(1.35);
+}
+
+.reviews-status {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.reviews-error { color: #fca5a5; }
+
+/* ── Location & Hours Section ────────────────── */
+.location-section {
+  background-color: #f2f7ee;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.location-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .location-inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+}
+
+.map-col { flex: 1; min-width: 0; }
+
+.hours-col { flex-shrink: 0; width: 100%; }
+
+@media (min-width: 768px) {
+  .hours-col { width: 280px; }
+}
+
+.location-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #14532d;
+  margin-bottom: 0.5rem;
+}
+
+.location-title::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: #15803d;
+  border-radius: 2px;
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.location-address {
+  font-size: 0.9rem;
+  color: #57534e;
+  margin-bottom: 1rem;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 340px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.75rem;
+}
+
+.hours-row td {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #dcfce7;
+}
+
+.hours-day { font-weight: 700; color: #14532d; width: 50%; }
+.hours-time { color: #57534e; text-align: right; }
+
+.hours-closed .hours-day,
+.hours-closed .hours-time { color: #b91c1c; }
+
+.special-hours-title {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #14532d;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Map Placeholder (cookies declined) ──────── */
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: #e9f5e1;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.map-placeholder-text {
+  font-size: 0.9rem;
+  color: #57534e;
+}
+
+.map-placeholder-link {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #15803d;
+  text-decoration: none;
+  border: 1px solid #15803d;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.map-placeholder-link:hover {
+  background: #15803d;
+  color: white;
+}
