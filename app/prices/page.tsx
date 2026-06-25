@@ -92,6 +92,28 @@ export default function PricesPage() {
           </div>
         </div>
 
+        {/* ── Specials ── */}
+        <div className="specials-section">
+          <h2 className="specials-heading">Specials</h2>
+          <div className="prices-grid">
+
+            <div className="special-card">
+              <span className="special-day">Manicure Monday</span>
+              <p className="special-offer">$8 Nail Trim</p>
+              <p className="special-fine">Valid every Monday</p>
+              <p className="special-fine">No coupon needed</p>
+            </div>
+
+            <div className="special-card">
+              <span className="special-day">Double-Dog Wednesday</span>
+              <p className="special-offer">Buy one get one half price!</p>
+              <p className="special-fine">Valid for self-serve dog wash only.</p>
+              <p className="special-fine">Not valid with any offer.</p>
+            </div>
+
+          </div>
+        </div>
+
         {/* ── Wave to add-ons ── */}
         <div className="wave-divider" aria-hidden="true">
           <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
