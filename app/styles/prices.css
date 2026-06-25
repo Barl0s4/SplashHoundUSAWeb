@@ -24,7 +24,7 @@
 
 .prices-banner-wave {
   position: absolute;
-  bottom: 0;
+  bottom: -1;
   left: 0;
   right: 0;
   line-height: 0;
@@ -241,6 +241,7 @@
   background: #1a4731;
   padding: 3rem 0 4rem;
 }
+
 
 .add-ons-inner {
   max-width: 64rem;

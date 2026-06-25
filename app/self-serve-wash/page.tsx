@@ -64,7 +64,7 @@ export default function SelfServeWashPage() {
               </p>
 
               <p>
-                Our exclusively designed <strong>HydroSplash bathing wand</strong> penetrates through
+                Our exclusively designed <strong>HydroSplash bathing wand </strong> penetrates through
                 even the thickest coats — lifting your pet&apos;s fur and delivering a perfect mix of
                 warm water and rich, foamy shampoo to move dirt and debris out of the coat. Your dog
                 gets to enjoy a luxurious massage while you effortlessly clean, fluff and rinse!
