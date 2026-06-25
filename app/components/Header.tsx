@@ -23,8 +23,8 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3 shrink-0">
-          <a href="/" className="brand-name" style={{ textDecoration: "none", color: "inherit" }}>
-            Splash Hound USA
+          <a href="/" aria-label="Splash Hound USA — Home">
+            <img src="/images/Logo_Version2.png" alt="Splash Hound USA" className="header-logo" />
           </a>
           <button
             onClick={() => setOpen(!open)}

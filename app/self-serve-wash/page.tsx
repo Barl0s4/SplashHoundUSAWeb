@@ -85,13 +85,10 @@ export default function SelfServeWashPage() {
                 ⏰ Last self wash of the day must begin 30 minutes before closing time
               </div>
             </div>
-
           </div>
         </div>
-
-
+        
       </main>
-
       <Footer />
     </div>
   );

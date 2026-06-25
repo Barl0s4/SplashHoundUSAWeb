@@ -18,6 +18,7 @@ export default function PetSupplyPage() {
           <h1 className="section-title">Pet Supply</h1>
           <p className="offer-description">Content coming soon.</p>
         </div>
+        
       </main>
       <Footer />
     </div>
