@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Baloo_2 } from "next/font/google";
 import "./globals.css";
-import ScrollToTop from "./components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +9,13 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+// Rounded, friendly display font used for every heading site-wide.
+const baloo = Baloo_2({
+  variable: "--font-head",
+  weight: ["600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -27,12 +33,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${baloo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <a href="#main-content" className="skip-link">Skip to main content</a>
         {children}
-        <ScrollToTop />
       </body>
     </html>
   );

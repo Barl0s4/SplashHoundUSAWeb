@@ -1,0 +1,217 @@
+/* ── Visit Us Page ─────────────────────────────── */
+.vis-page {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 48px 24px 70px;
+}
+
+.vis-heading {
+  font-family: var(--font-head), 'Baloo 2', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  color: #26314A;
+  margin: 0 0 6px 0;
+}
+
+.vis-accent-bar {
+  width: 64px;
+  height: 5px;
+  background: #2E5FD9;
+  border-radius: 999px;
+  margin-bottom: 40px;
+}
+
+/* ── Two-column layout ───────────────────────────── */
+.vis-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.vis-map-col {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vis-card-below-map {
+  flex-shrink: 0;
+}
+
+.vis-map-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #EDE6DA;
+  background: #f5f1eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vis-map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* map placeholder inherits from shared.css .map-placeholder,
+   but override height here so it fills the wrap */
+.vis-map-wrap .map-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+}
+
+.vis-info-col {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Info cards ──────────────────────────────────── */
+.vis-card {
+  background: #fff;
+  border: 1px solid #EDE6DA;
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.vis-card-title {
+  font-family: var(--font-head), 'Baloo 2', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #26314A;
+  margin: 0 0 14px 0;
+}
+
+/* ── Contact rows ────────────────────────────────── */
+.vis-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.vis-contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: #4B4F5C;
+  line-height: 1.5;
+}
+
+.vis-contact-icon {
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.vis-contact-link {
+  color: #2E5FD9;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.vis-contact-link:hover { text-decoration: underline; }
+
+.vis-directions-btn {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 14px;
+  color: #2E5FD9;
+  background: rgba(46, 95, 217, 0.08);
+  border: 1px solid rgba(46, 95, 217, 0.2);
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.vis-directions-btn:hover { background: rgba(46, 95, 217, 0.14); }
+
+/* ── Hours table ─────────────────────────────────── */
+.vis-hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 4px;
+}
+
+.vis-hours-row td {
+  font-size: 15px;
+  color: #4B4F5C;
+  padding: 8px 0;
+  border-bottom: 1px solid #F1ECE2;
+}
+
+.vis-hours-row:last-child td {
+  border-bottom: none;
+}
+
+.vis-hours-day {
+  font-weight: 600;
+}
+
+.vis-hours-time {
+  text-align: right;
+  font-weight: 700;
+}
+
+.vis-hours-closed .vis-hours-day,
+.vis-hours-closed .vis-hours-time {
+  color: #b45309;
+}
+
+.vis-special-title {
+  font-family: var(--font-head), 'Baloo 2', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 18px 0 8px 0;
+}
+
+/* ── Book CTA ────────────────────────────────────── */
+.vis-book-btn {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  font-size: 16px;
+  color: #fff;
+  background: #FF8B5E;
+  border-radius: 999px;
+  padding: 18px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.vis-book-btn:hover { opacity: 0.9; }
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 860px) {
+  .vis-page {
+    padding: 32px 20px 48px;
+  }
+
+  .vis-heading {
+    font-size: 30px;
+  }
+
+  .vis-layout {
+    flex-direction: column;
+  }
+
+  .vis-map-col,
+  .vis-info-col {
+    width: 100%;
+    min-width: 0;
+  }
+}

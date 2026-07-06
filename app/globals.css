@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #eff6ff;
-  --foreground: #0f2744;
+  --background: #FFF8F0;
+  --foreground: #26314A;
+  --c-primary: #2E5FD9;
+  --c-accent: #FF8B5E;
+  --c-border: #EDE6DA;
 }
 
 @theme inline {
@@ -12,29 +15,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
-  background: #0f2744;
+  background: #FFF8F0;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
-  background-color: #eff6ff;
-  background-image: linear-gradient(180deg, #1e5fa8 0px, #eff6ff 80px);
-  background-size: 100% 80px;
-  background-repeat: no-repeat;
-  background-position: top;
-  margin-top: -1px;
+  background: #FFF8F0;
+}
+
+/* Warm, rounded display font for every heading — the single biggest lever
+   for a friendlier, less "template" feel. Falls back cleanly to the
+   existing sans stack if the font hasn't loaded yet. */
+h1, h2, h3,
+.section-title,
+.hero-headline,
+.location-title,
+.reviews-title,
+.price-card-title,
+.special-offer,
+.add-on-title,
+.prices-banner-title,
+.fsw-banner-title,
+.ssw-banner-title,
+.ssw-service-title,
+.fsw-service-title,
+.footer-brand {
+  font-family: var(--font-head), 'Baloo 2', Arial, sans-serif;
+  letter-spacing: -0.01em;
 }
 
 /* Visible focus ring for keyboard navigation (ADA) */
 :focus-visible {
-  outline: 2px solid #1e5fa8;
+  outline: 2px solid #3b52e8;
   outline-offset: 3px;
   border-radius: 3px;
 }
 
-/* Skip-to-content link (ADA) — invisible until keyboard Tab focuses it */
+/* Skip-to-content link (ADA) */
 .skip-link {
   position: absolute;
   width: 1px;
@@ -59,7 +82,7 @@ main {
   overflow: visible;
   clip: auto;
   white-space: normal;
-  background: #0f2744;
+  background: #1c2540;
   color: white;
   border-radius: 0 0 0.5rem 0.5rem;
   font-weight: 700;
