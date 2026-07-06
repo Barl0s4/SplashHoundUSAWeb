@@ -14,9 +14,9 @@ export default function Footer() {
           <p className="footer-col-title">Explore</p>
           <nav className="footer-nav" aria-label="Footer navigation">
             <a href="/">Home</a>
-            <a href="/self-serve-wash">Self-Serve Wash</a>
-            <a href="/full-serve-wash">Full-Serve Wash</a>
+            <a href="/services">Services</a>
             <a href="/prices">Prices &amp; Specials</a>
+            <a href="/visit-us">Visit Us</a>
           </nav>
         </div>
 
