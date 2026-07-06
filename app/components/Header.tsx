@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
@@ -14,6 +14,21 @@ const NAV_ITEMS = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const menuRef = useRef<HTMLDivElement>(null);
+  const btnRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function handleClickOutside(e: MouseEvent) {
+      if (
+        menuRef.current?.contains(e.target as Node) ||
+        btnRef.current?.contains(e.target as Node)
+      ) return;
+      setOpen(false);
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
 
   function isActive(href: string) {
     if (href.includes("#")) return false;
@@ -50,6 +65,7 @@ export default function Header() {
             Book Appointment →
           </a>
           <button
+            ref={btnRef}
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
             aria-expanded={open}
@@ -62,29 +78,29 @@ export default function Header() {
         </div>
       </header>
 
-      {open && (
-        <div className="mobile-nav">
-          {NAV_ITEMS.map(({ href, label }) => (
-            <a
-              key={href}
-              href={href}
-              className="mobile-nav-link"
-              onClick={() => setOpen(false)}
-            >
-              {label}
-            </a>
-          ))}
+      <div ref={menuRef} className={`mobile-nav${open ? " mobile-nav-open" : ""}`} aria-hidden={!open}>
+        {NAV_ITEMS.map(({ href, label }) => (
           <a
-            href="https://splashhoundusa.setmore.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-nav-cta"
+            key={href}
+            href={href}
+            className="mobile-nav-link"
             onClick={() => setOpen(false)}
+            tabIndex={open ? 0 : -1}
           >
-            Book Appointment →
+            {label}
           </a>
-        </div>
-      )}
+        ))}
+        <a
+          href="https://splashhoundusa.setmore.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mobile-nav-cta"
+          onClick={() => setOpen(false)}
+          tabIndex={open ? 0 : -1}
+        >
+          Book Appointment →
+        </a>
+      </div>
     </>
   );
 }

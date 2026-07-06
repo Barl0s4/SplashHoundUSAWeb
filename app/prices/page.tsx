@@ -152,7 +152,7 @@ export default function PricesPage() {
                 $8 nail trim · Every Monday · No coupon needed. Ask us about this week&apos;s deal — specials rotate, so check in-store or call ahead.
               </p>
             </div>
-            <a href="/#location" className="prc-monday-btn">Visit Us →</a>
+            <a href="/visit-us" className="prc-monday-btn">Visit Us →</a>
           </div>
 
         </div>

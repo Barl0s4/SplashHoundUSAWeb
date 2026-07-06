@@ -73,15 +73,10 @@ export default function Page() {
                 Book Appointment →
               </a>
               <div className="cards">
-                <a href="/self-serve-wash" className="card">
-                  <div className="card-badge card-badge-blue">S</div>
-                  <h2 className="card-title">Self-Serve Wash</h2>
-                  <p className="card-body">Use our tubs, towels &amp; dryers — from $18, no appointment needed.</p>
-                </a>
-                <a href="/full-serve-wash" className="card">
-                  <div className="card-badge card-badge-blue">F</div>
-                  <h2 className="card-title">Full-Serve Wash</h2>
-                  <p className="card-body">We handle everything — bath, dry, brush, and nails. Starting at $35.</p>
+                <a href="/services" className="card">
+                  <div className="card-badge card-badge-blue">🐾</div>
+                  <h2 className="card-title">Our Services</h2>
+                  <p className="card-body">Self-serve from $18 or full-serve from $35 — walk-ins welcome.</p>
                 </a>
                 <a href="/prices" className="card">
                   <div className="card-badge card-badge-peach">$</div>

@@ -112,7 +112,7 @@
 
 @media (max-width: 767px) {
   .hero-inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 2rem;
   }
@@ -563,7 +563,7 @@
   }
 
   .hero-inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 2rem;
   }
 

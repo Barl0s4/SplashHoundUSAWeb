@@ -126,10 +126,28 @@
   z-index: 49;
   background: #fff;
   border-bottom: 1px solid #EDE6DA;
-  padding: 14px 20px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    max-height 0.3s ease,
+    opacity 0.22s ease,
+    transform 0.25s ease,
+    padding 0.3s ease;
+  pointer-events: none;
+}
+
+.mobile-nav.mobile-nav-open {
+  max-height: 500px;
+  padding: 14px 20px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 @media (min-width: 860px) {
