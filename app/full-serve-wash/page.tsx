@@ -4,7 +4,6 @@ import "../styles/full-serve.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-
 export const metadata = {
   title: "Full-Serve Wash — Splash Hound USA",
 };
@@ -18,67 +17,67 @@ export default function FullServeWashPage() {
 
       <main id="main-content" className="flex-1">
 
-        {/* ── Banner ── */}
-        <div className="fsw-banner">
-          <h1 className="fsw-banner-title">Full-Serve Wash</h1>
-          <p className="fsw-banner-sub">
-            Appointments only &nbsp;·&nbsp; call{" "}
-            <a href="tel:9166428700" className="fsw-banner-phone">916.642.8700</a>
+        {/* ── Service: photo left, info right ── */}
+        <div className="fsw-service-section" style={{ paddingTop: "3rem" }}>
+          <div className="fsw-service-grid">
+
+            <div className="fsw-service-photo">
+              <img
+                src="/images/Grooming2.jpeg"
+                alt="Professional grooming at Splash Hound USA"
+                className="fsw-service-img"
+              />
+            </div>
+
+            <div className="fsw-service-info">
+              <span className="fsw-price-pill">Starting at $35</span>
+              <h2 className="fsw-service-title">Full-Serve Wash</h2>
+              <p className="fsw-service-lead">
+                We handle everything — bath, dry, brush, and nails.
+              </p>
+              <ul className="fsw-checklist">
+                <li><span className="fsw-check">✓</span> Full bath, brush-out &amp; blow-dry</li>
+                <li><span className="fsw-check">✓</span> Deep conditioning &amp; mink oil coat conditioner</li>
+                <li><span className="fsw-check">✓</span> Ears cleaned &amp; nails clipped</li>
+                <li><span className="fsw-check">✓</span> Nail trim included</li>
+                <li><span className="fsw-check">✓</span> Optional add-ons available in-store</li>
+              </ul>
+              <a
+                href="https://splashhoundusa.setmore.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fsw-book-btn"
+              >
+                Book Appointment →
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        {/* ── Detail copy ── */}
+        <div className="fsw-detail-section">
+          <hr className="fsw-rule" />
+
+          <p>
+            Our full service dog bath includes a gentle pre-cleansing shampoo, plus a second
+            cleanse with shampoo selected for your pet&apos;s unique skin and coat needs.
+            Followed by a deep conditioning treatment, cage-free blow-dry and mink oil coat
+            conditioner. Also includes brush out, ears cleaned &amp; nails clipped and/or filed.
           </p>
-          <div className="fsw-banner-wave">
-            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#eff6ff" />
-            </svg>
-          </div>
+
+          <p className="fsw-warn">
+            We do not offer hair cutting, clipping or shaving services —
+            just the best bath in town!
+          </p>
+
+          <img
+            src="/images/Dog5.jpeg"
+            alt="Happy dog after a full-serve wash at Splash Hound USA"
+            className="fsw-extra-img"
+          />
         </div>
 
-        {/* ── Content ── */}
-        <div className="fsw-content">
-          <div className="fsw-grid">
-
-            {/* Left: photos + book button */}
-            <div className="fsw-images">
-              <img
-                src="/images/Dog3.jpeg"
-                alt="Before and after full-serve dog wash"
-                className="fsw-img"
-              />
-              <img
-                src="/images/Dog5.jpeg"
-                alt="Groomer washing a Dalmatian at Splash Hound USA"
-                className="fsw-img"
-              />
-            </div>
-
-            {/* Right: button, description, warning, image */}
-            <div className="fsw-text">
-              <a href="https://splashhoundusa.setmore.com" target="_blank" rel="noopener noreferrer" className="fsw-book-btn">Book Appointment →</a>
-
-              <hr className="fsw-rule" />
-
-              <p>
-                Our full service dog bath includes a gentle pre-cleansing shampoo, plus a second
-                cleanse with shampoo selected for your pet&apos;s unique skin and coat needs.
-                Followed by a deep conditioning treatment, cage-free blow-dry and mink oil coat
-                conditioner. Also includes brush out, ears cleaned &amp; nails clipped and/or filed.
-              </p>
-
-              <p className="fsw-warn">
-                We do not offer hair cutting, clipping or shaving services —
-                just the best bath in town!
-              </p>
-
-              <hr className="fsw-rule" />
-
-              <img
-                src="/images/Dog6.jpeg"
-                alt="Professional groomer bathing a terrier at Splash Hound USA"
-                className="fsw-img"
-              />
-            </div>
-          </div>
-        </div>
-        
       </main>
       <Footer />
     </div>

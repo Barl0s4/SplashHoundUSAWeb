@@ -1,11 +1,106 @@
 /* ── Self-Serve Wash Page ────────────────────── */
 
-/* inline callout below the paragraphs */
+/* ── Service: photo left, info right ─────────── */
+.ssw-service-section {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 1rem;
+}
+
+.ssw-service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ssw-service-img {
+  width: 100%;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+  display: block;
+}
+
+.ssw-price-pill {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #2E5FD9;
+  background: #e8edfc;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.ssw-service-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1c2540;
+  margin-bottom: 0.75rem;
+}
+
+.ssw-service-lead {
+  font-size: 0.975rem;
+  color: #57534e;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.ssw-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.ssw-checklist li {
+  font-size: 0.95rem;
+  color: #374151;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.5;
+}
+
+.ssw-check {
+  color: #3b52e8;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* ── Detail copy ──────────────────────────────── */
+.ssw-detail-section {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ssw-detail-section p {
+  font-size: 0.975rem;
+  color: #374151;
+  line-height: 1.85;
+  margin: 0;
+}
+
+.ssw-rule {
+  border: none;
+  border-top: 2px solid #3b52e8;
+  margin: 0.5rem 0 0.75rem;
+}
+
 .ssw-notice {
   background: #fffbeb;
   border: 1px solid #fde68a;
   border-left: 5px solid #d97706;
-  border-radius: 0.75rem;
+  border-radius: 0.9rem;
   padding: 0.9rem 1.25rem;
   color: #92400e;
   font-size: 1.05rem;
@@ -14,106 +109,9 @@
   letter-spacing: 0.02em;
 }
 
-/* green page banner (same pattern as prices) */
-.ssw-banner {
-  position: relative;
-  background: linear-gradient(180deg, #1e5fa8 0%, #163d70 50%, #0f2744 100%);
-  padding: 1.5rem 1.5rem 5rem;
-  text-align: center;
-  color: white;
-  overflow: hidden; /* prevents any gap at the wave seam */
-}
-
-.ssw-banner-title {
-  font-size: 2.25rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.4rem;
-}
-
-.ssw-banner-sub {
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #bfdbfe;
-}
-
-.ssw-banner-wave {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  line-height: 0;
-}
-
-.ssw-banner-wave svg {
-  display: block;
-  width: 100%;
-  height: 60px;
-}
-
-
-/* ── Main content ────────────────────────────── */
-.ssw-content {
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
-}
-
-.ssw-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-/* Left: stacked images */
-.ssw-images {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.ssw-img {
-  width: 100%;
-  border-radius: 1rem;
-  object-fit: cover;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
-  display: block;
-}
-
-/* Right: text */
-.ssw-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  padding-top: 0.25rem;
-}
-
-.ssw-rule {
-  border: none;
-  border-top: 2px solid #1e5fa8;
-  margin: 0;
-}
-
-.ssw-text p {
-  font-size: 0.975rem;
-  color: #374151;
-  line-height: 1.85;
-}
-
-.ssw-text strong {
-  color: #0f2744;
-}
-
 @media (max-width: 767px) {
-  .ssw-grid {
+  .ssw-service-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .ssw-banner-title {
-    font-size: 1.75rem;
+    gap: 1.5rem;
   }
 }

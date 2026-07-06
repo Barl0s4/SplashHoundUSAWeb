@@ -1,99 +1,109 @@
-/* ── Full-Serve Wash Page ────────────────────── */
+/* ── Full-Serve Wash Page ─────────────────────── */
 
-.fsw-banner {
-  position: relative;
-  background: linear-gradient(180deg, #1e5fa8 0%, #163d70 50%, #0f2744 100%);
-  padding: 1.5rem 1.5rem 5rem;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-}
-
-.fsw-banner-title {
-  font-size: 2.25rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.4rem;
-}
-
-.fsw-banner-sub {
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #bfdbfe;
-}
-
-.fsw-banner-phone {
-  color: #93c5fd;
-  text-decoration: none;
-  font-weight: 800;
-}
-
-.fsw-banner-phone:hover {
-  color: white;
-}
-
-.fsw-banner-wave {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  line-height: 0;
-}
-
-.fsw-banner-wave svg {
-  display: block;
-  width: 100%;
-  height: 60px;
-}
-
-/* ── Main content ────────────────────────────── */
-.fsw-content {
+/* ── Service: photo left, info right ─────────── */
+.fsw-service-section {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+  padding: 1rem 1.5rem 1rem;
 }
 
-.fsw-grid {
+.fsw-service-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
+  gap: 3rem;
+  align-items: center;
 }
 
-/* Left: stacked images + button */
-.fsw-images {
+.fsw-service-info {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
 }
 
-.fsw-img {
+.fsw-price-pill {
+  display: inline-block;
+  width: fit-content;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #FF8B5E;
+  background: #f8d5c8;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.fsw-service-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1c2540;
+  margin-bottom: 0.75rem;
+}
+
+.fsw-service-lead {
+  font-size: 0.975rem;
+  color: #57534e;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.fsw-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.fsw-checklist li {
+  font-size: 0.95rem;
+  color: #374151;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.5;
+}
+
+.fsw-check {
+  color: #c05030;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.fsw-service-photo {
+  display: flex;
+}
+
+.fsw-service-img {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   object-fit: cover;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
   display: block;
 }
 
-/* Right: button, text, image */
-.fsw-text {
+/* ── Detail copy ──────────────────────────────── */
+.fsw-detail-section {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 4rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.fsw-rule {
-  border: none;
-  border-top: 2px solid #1e5fa8;
-  margin: 0;
-}
-
-.fsw-text p {
+.fsw-detail-section p {
   font-size: 0.975rem;
   color: #374151;
   line-height: 1.85;
+  margin: 0;
+}
+
+.fsw-rule {
+  border: none;
+  border-top: 2px solid #3b52e8;
+  margin: 0.5rem 0 0.75rem;
 }
 
 .fsw-warn {
@@ -102,49 +112,45 @@
   font-weight: 700;
   color: #b91c1c;
   line-height: 1.7;
+  margin: 0;
+}
+
+.fsw-extra-img {
+  width: 100%;
+  max-width: 32rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+  display: block;
+  margin: 0.5rem auto 0;
 }
 
 .fsw-book-btn {
   display: block;
   text-decoration: none;
-  background: linear-gradient(135deg, #2d7dd2, #1e5fa8);
+  background: #FF8B5E;
   color: white;
   font-family: inherit;
-  font-size: 1.05rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 0.9rem 2rem;
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  box-shadow: 0 6px 24px rgba(30, 95, 168, 0.5), 0 0 0 0 rgba(96, 165, 250, 0);
-  align-self: stretch;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  align-self: flex-start;
   text-align: center;
-  animation: btn-pulse 2.5s ease-in-out infinite;
-}
-
-@keyframes btn-pulse {
-  0%, 100% { box-shadow: 0 6px 24px rgba(30, 95, 168, 0.5), 0 0 0 0 rgba(96, 165, 250, 0.5); }
-  50%       { box-shadow: 0 6px 24px rgba(30, 95, 168, 0.5), 0 0 0 10px rgba(96, 165, 250, 0); }
 }
 
 .fsw-book-btn:hover {
-  background: linear-gradient(135deg, #60a5fa, #2d7dd2);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 32px rgba(30, 95, 168, 0.55);
-  animation: none;
+  opacity: 0.88;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 767px) {
-  .fsw-grid {
+  .fsw-service-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .fsw-banner-title {
-    font-size: 1.75rem;
+    gap: 1.5rem;
   }
 
   .fsw-book-btn {
