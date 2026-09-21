@@ -27,9 +27,9 @@ export default function PricesPage() {
             {/* Self-Serve */}
             <div className="prc-card">
               <p className="prc-card-title-blue">Self-Serve Wash</p>
-              <p className="prc-price">from $18</p>
+              <p className="prc-price">$18 - ALL SIZES</p>
               <p className="prc-desc">
-                Tubs, towels, shampoo &amp; heated dryers included. No appointment needed — ask in-store for size-based pricing.
+                Tubs, towels, shampoo &amp; heated dryers included. No appointment needed.
               </p>
               <hr className="prc-divider" />
               <p className="prc-includes-label">What&apos;s included</p>
@@ -38,10 +38,11 @@ export default function PricesPage() {
                 <li>Scented Shampoo</li>
                 <li>Blueberry Facial Scrub</li>
                 <li>Ear Cleaner</li>
-                <li>Massaging Scrubbies</li>
+                <li>Scrubbers</li>
                 <li>Towels</li>
                 <li>Grooming Brushes &amp; Combs</li>
                 <li>Nail Clippers</li>
+                <li>Blow Dryers</li>
               </ul>
               <p className="prc-note">
                 <strong>No appointment necessary.</strong> Last call is 30 minutes before closing.
@@ -51,7 +52,7 @@ export default function PricesPage() {
             {/* Full-Serve */}
             <div className="prc-card">
               <p className="prc-card-title-orange">Full-Serve Wash</p>
-              <p className="prc-price">from $35</p>
+              <p className="prc-price">$35 - $85</p>
               <p className="prc-desc">
                 Bath, dry, brush &amp; nails — we do the work. Ask in-store for size-based pricing.
               </p>
@@ -59,14 +60,13 @@ export default function PricesPage() {
               <p className="prc-includes-label">What&apos;s included</p>
               <ul className="prc-includes prc-includes-orange">
                 <li>Warm Hydro Massage Foaming Bath</li>
-                <li>Shampoo &amp; Conditioning Rinse</li>
-                <li>Deep Conditioning &amp; Mink Oil Coat Conditioner</li>
+                <li>Shampoo &amp; Conditioner</li>
                 <li>Ears Cleaned</li>
                 <li>Cage-Free Blow Dry &amp; Brush Out</li>
                 <li>Nails Clipped</li>
               </ul>
               <p className="prc-note-warn">
-                Additional charge of $5–$40 for larger breeds, long hair, matted, or difficult dogs. We do not offer hair cutting or shaving services.
+                Additional charge of $5–$40 for larger breeds, long hair, matted, or difficult dogs. <span className="prc-note-warn-internal">We do not offer hair cutting or shaving services.</span>
               </p>
               <p className="prc-note">
                 <strong>By appointment.</strong> Call{" "}
@@ -101,7 +101,6 @@ export default function PricesPage() {
                   <li><span className="prc-addon-price">$1</span>Flea &amp; Tick Shampoo</li>
                   <li><span className="prc-addon-price">$1</span>Whitening &amp; Brightening Shampoo</li>
                   <li><span className="prc-addon-price">$1</span>Dark Hair Enhancing Shampoo</li>
-                  <li><span className="prc-addon-price">$1</span>Medicated Shampoo (Hot Spots)</li>
                   <li><span className="prc-addon-price">$1</span>Odor Control Shampoo</li>
                   <li><span className="prc-addon-price">$1</span>Oatmeal Conditioner</li>
                   <li><span className="prc-addon-price">$1</span>Cream Rinse / Conditioner</li>
@@ -118,8 +117,8 @@ export default function PricesPage() {
                   <p className="prc-addon-group-title">Nail Trim</p>
                   <ul className="prc-addon-list">
                     <li><span className="prc-addon-price prc-addon-price-free">FREE</span>With Full-Service Bath</li>
-                    <li><span className="prc-addon-price">$8</span>With Self-Service Bath</li>
-                    <li><span className="prc-addon-price">$14</span>Nail Trim Only (no bath)</li>
+                    <li><span className="prc-addon-price">$10</span>With Self-Service Bath</li>
+                    <li><span className="prc-addon-price">$16</span>Nail Trim Only (no bath)</li>
                   </ul>
                 </div>
 
@@ -127,15 +126,15 @@ export default function PricesPage() {
                   <p className="prc-addon-group-title">Teeth Brushing</p>
                   <ul className="prc-addon-list">
                     <li><span className="prc-addon-price">$1</span>You-Do-It (includes toothbrush &amp; paste)</li>
-                    <li><span className="prc-addon-price">$4</span>We-Do-It</li>
+                    <li><span className="prc-addon-price">$5</span>We-Do-It</li>
                   </ul>
                 </div>
 
                 <div className="prc-addon-group">
                   <p className="prc-addon-group-title">Anal Gland Expression</p>
                   <ul className="prc-addon-list">
-                    <li><span className="prc-addon-price">$8</span>With Full or Self Serve Bath</li>
-                    <li><span className="prc-addon-price">$14</span>Gland Expression Only (no bath)</li>
+                    <li><span className="prc-addon-price">$10</span>With Full or Self Serve Bath</li>
+                    <li><span className="prc-addon-price">$16</span>Gland Expression Only (no bath)</li>
                   </ul>
                 </div>
               </div>
@@ -149,7 +148,7 @@ export default function PricesPage() {
               <p className="prc-monday-eyebrow">Weekly Special</p>
               <p className="prc-monday-title">Manicure Monday</p>
               <p className="prc-monday-sub">
-                $8 nail trim · Every Monday · No coupon needed. Ask us about this week&apos;s deal — specials rotate, so check in-store or call ahead.
+                $10 nail trim · Every Monday.
               </p>
             </div>
             <a href="/visit-us" className="prc-monday-btn">Visit Us →</a>

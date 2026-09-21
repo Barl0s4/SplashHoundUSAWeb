@@ -124,8 +124,8 @@
 
 .svc-note {
   margin-top: 16px;
-  font-size: 13px;
-  color: #8A8577;
+  font-size: 20px;
+  color: red;
   font-style: italic;
   line-height: 1.5;
 }

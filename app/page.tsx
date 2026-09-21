@@ -55,10 +55,8 @@ export default function Page() {
             <div className="offer-text">
               <h2 className="section-title">Welcome to Splash Hound USA</h2>
               <p className="offer-description">
-                We are a locally owned Pet Supply and Dog Wash with the BEST do-it-yourself dog
-                bath around! We offer biologically appropriate dog &amp; cat food for any
-                pet&apos;s special needs, plus a unique variety of carefully selected toys, treats,
-                supplements, grooming &amp; health aids, leashes, collars &amp; accessories.
+                We are a locally owned Pet Supply and Dog Wash with the BEST do-it-yourself dog 
+                bath around! We offer toys, treats, grooming supplies, leashes & collars.
               </p>
               <p className="offer-description">
                 Our mission is to provide a comfortable, clean, &amp; welcoming facility, where

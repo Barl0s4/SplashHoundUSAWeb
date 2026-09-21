@@ -131,6 +131,12 @@
   line-height: 1.6;
   margin: 0 0 14px 0;
 }
+.prc-note-warn-internal {
+  font-size: 17px;
+  font-weight: bold;
+  color: #cf280a;
+
+}
 
 .prc-book-btn {
   display: inline-block;

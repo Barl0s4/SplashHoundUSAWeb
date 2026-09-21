@@ -38,12 +38,11 @@ export default function ServicesPage() {
               </p>
               <ul className="svc-checklist">
                 <li><span className="svc-check-blue">✓</span> Raised tubs, no bending or kneeling</li>
-                <li><span className="svc-check-blue">✓</span> Shampoo, towels &amp; heated dryers provided</li>
+                <li><span className="svc-check-blue">✓</span> Shampoo, towels &amp; blow dryers provided</li>
                 <li><span className="svc-check-blue">✓</span> Aprons available — we handle the mess</li>
-                <li><span className="svc-check-blue">✓</span> Mink oil coat conditioner included</li>
               </ul>
               <p className="svc-note">
-                ⏰ Last call is 30 minutes before closing.
+                <strong>⏰ Last call is 30 minutes before closing.</strong>
               </p>
             </div>
           </div>
@@ -65,7 +64,7 @@ export default function ServicesPage() {
               </p>
               <ul className="svc-checklist">
                 <li><span className="svc-check-orange">✓</span> Full bath, brush-out &amp; blow-dry</li>
-                <li><span className="svc-check-orange">✓</span> Deep conditioning &amp; mink oil coat conditioner</li>
+                <li><span className="svc-check-orange">✓</span> Deep conditioning</li>
                 <li><span className="svc-check-orange">✓</span> Ears cleaned &amp; nails clipped</li>
                 <li><span className="svc-check-orange">✓</span> Optional add-ons available in-store</li>
               </ul>
