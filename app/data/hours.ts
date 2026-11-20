@@ -1,3 +1,13 @@
+export const ThanksgivingHours = [
+  { day: "Mon", time: "10:30 AM – 5:00 PM" },
+  { day: "Tue", time: "Closed" },
+  { day: "Wed", time: "10:30 AM – 3:00 PM" },
+  { day: "Thu", time: "Closed" },
+  { day: "Fri", time: "Closed" },
+  { day: "Sat", time: "12:00 PM – 5:00 PM" },
+  { day: "Sun", time: "9:00 AM – 5:00 PM" },
+];
+
 export const hours = [
   { day: "Mon", time: "10:30 AM – 5:00 PM" },
   { day: "Tue", time: "Closed" },

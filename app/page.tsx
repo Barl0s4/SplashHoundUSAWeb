@@ -3,6 +3,7 @@ import "./styles/shared.css";
 import "./styles/home.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Popup from "./components/Popup";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
@@ -11,6 +12,7 @@ export default function Page() {
     <div className={`flex flex-col min-h-screen ${nunito.className}`}>
 
       <Header />
+      <Popup />
 
       <main id="main-content" className="flex-1">
 

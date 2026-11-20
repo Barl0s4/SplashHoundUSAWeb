@@ -77,6 +77,20 @@
 }
 
 /* ── Info cards ──────────────────────────────────── */
+.vis-card-special {
+  background:#F2E3D6 ;
+  border: 1px solid #E8D2BE;
+  border-radius: 20px;
+  padding: 26px;
+}
+.vis-card-title-special {
+  font-family: var(--font-head), 'Baloo 2', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #26314A;
+  margin: 0 0 14px 0;
+}
+
 .vis-card {
   background: #fff;
   border: 1px solid #EDE6DA;
@@ -138,6 +152,12 @@
 .vis-directions-btn:hover { background: rgba(46, 95, 217, 0.14); }
 
 /* ── Hours table ─────────────────────────────────── */
+.vis-hours-highlight,
+.vis-hours-highlight td {
+  color: #3b52e8 !important;
+  font-weight: 700;
+}
+
 .vis-hours-table {
   width: 100%;
   border-collapse: collapse;
@@ -173,7 +193,7 @@
   font-family: var(--font-head), 'Baloo 2', Arial, sans-serif;
   font-weight: 700;
   font-size: 13px;
-  color: #9ca3af;
+  color: #374151;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin: 18px 0 8px 0;

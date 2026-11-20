@@ -4,13 +4,17 @@ import "../styles/visit.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MapEmbed from "../components/MapEmbed";
-import { hours, specialHours } from "../data/hours";
+import { hours, specialHours, ThanksgivingHours } from "../data/hours";
 
 export const metadata = {
   title: "Visit Us — Splash Hound USA",
 };
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "800"] });
+
+// ThanksgivingHours
+const specialDays = ["Wed", "Sat"];
+// ^^^^^^^^^^
 
 export default function VisitPage() {
   return (
@@ -57,6 +61,23 @@ export default function VisitPage() {
 
             {/* ── Info ── */}
             <div className="vis-info-col">
+
+
+              {/* Thankgivinghours */}
+              <div className="vis-card-special">
+                <p className="vis-card-title-special">Thanksgiving Hours</p>
+                <table className="vis-hours-table">
+                  <tbody>
+                    {ThanksgivingHours.map(({ day, time }) => (
+
+                      <tr key={day} className={`vis-hours-row${time === "Closed" ? " vis-hours-closed" : ""}${specialDays.includes(day) ? " vis-hours-highlight" : ""}`}>
+                        <td className="vis-hours-day">{day}</td>
+                        <td className="vis-hours-time">{time}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
 
               {/* Hours */}
               <div className="vis-card">

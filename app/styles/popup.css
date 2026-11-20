@@ -1,0 +1,27 @@
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: #FF8B5E;
+    color: #fff;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    z-index: 1000;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+  
+.closeBtn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666666;
+}
