@@ -65,7 +65,7 @@ export default function VisitPage() {
 
               {/* Thankgivinghours */}
               <div className="vis-card-special">
-                <p className="vis-card-title-special">Thanksgiving Hours</p>
+                <p className="vis-card-title-special">Thanksgiving Hours 11/23 - 11/28</p>
                 <table className="vis-hours-table">
                   <tbody>
                     {ThanksgivingHours.map(({ day, time }) => (
