@@ -3,6 +3,7 @@ import "../styles/shared.css";
 import "../styles/prices.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Popup from "../components/Popup";
 
 export const metadata = {
   title: "Prices & Specials — Splash Hound USA",
@@ -14,6 +15,7 @@ export default function PricesPage() {
   return (
     <div className={`flex flex-col min-h-screen ${nunito.className}`}>
       <Header />
+      <Popup />
 
       <main id="main-content" className="flex-1">
         <div className="prc-page">

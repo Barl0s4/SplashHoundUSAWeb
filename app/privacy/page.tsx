@@ -3,6 +3,7 @@ import "../styles/shared.css";
 import "../styles/privacy.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Popup from "../components/Popup";
 
 
 export const metadata = {
@@ -16,6 +17,7 @@ export default function PrivacyPage() {
     <div className={`flex flex-col min-h-screen ${nunito.className}`}>
 
       <Header />
+      <Popup />
 
       <main id="main-content" className="flex-1">
         <div className="page-content" style={{ maxWidth: "52rem" }}>
